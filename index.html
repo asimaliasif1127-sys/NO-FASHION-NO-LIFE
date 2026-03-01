@@ -214,10 +214,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
   </div>
   <div class="filters reveal">
     <button class="fb active" onclick="filterP('all',this)">All</button>
-    <button class="fb" onclick="filterP('men',this)">Men</button>
-    <button class="fb" onclick="filterP('women',this)">Women</button>
-    <button class="fb" onclick="filterP('accessories',this)">Accessories</button>
-    <button class="fb" onclick="filterP('footwear',this)">Footwear</button>
+    <button class="fb" onclick="filterP('men wear ',this)">men wear</button>
+    <button class="fb" onclick="filterP('women wear',this)">women wear</button>
+    <button class="fb" onclick="filterP('men accessories',this)">men accessories</button>
+    <button class="fb" onclick="filterP('women footwear',this)">women footwear</button>
+    <button class="fb" onclick="filterP('women accesories',this)">women accessories</button>
   </div>
   <div class="grid reveal" id="grid"></div>
 </div>
@@ -242,10 +243,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
   <div>
     <div class="fhead">Categories</div>
     <ul class="flinks">
-      <li><a href="#">Men's Fashion</a></li>
-      <li><a href="#">Women's Fashion</a></li>
-      <li><a href="#">Accessories</a></li>
-      <li><a href="#">Footwear</a></li>
+      <li><a href="#">men wear</a></li>
+      <li><a href="#">women wear</a></li>
+      <li><a href="#">men accessories</a></li>
+      <li><a href="#">women footwear</a></li>
+      <li><a href="#">women accessories</a></li>
     </ul>
   </div>
   <div>
@@ -260,7 +262,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
 </footer>
 <div class="fbot">
   <p>© 2025 NO-FASHION NO-LIFE . All rights reserved.</p>
-  <div class="fdisc">Disclosure:Asim's style World participates in the Amazon Associates Program. We earn from qualifying purchases at no extra cost to you.</div>
+  <div class="fdisc">Disclosure:NO FASHION NO LIFE World participates in the Amazon Associates Program. We earn from qualifying purchases at no extra cost to you.</div>
 </div>
 
 <script>
@@ -269,32 +271,32 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
 // ================================================================
 const products = [
   {
-    name: "Sample Men's Shirt",
-     category: "men",
+    name: "Mens Fashion Button Down Shirts",
+     category: "men wear,
     badge: "hot", badgeText: "🔥 Hot",
-    desc: "Premium quality with a great fit. Add your product description here.",
+    desc: "Constructed from a linen fabric this short sleeve shirt offers a lightweight and feel suitable for daily wear in warm",
     rating: "★★★★★", reviews: "4.8 (1,200 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-    img: "", emoji: "👔",
+    img: "https://m.media-amazon.com/images/I/71tNBN4sWxL._AC_SX679_.jpg", emoji: "👔",
     imgBg: "linear-gradient(135deg,#12121e,#1e1228)",
-    link: "YOUR_AMAZON_AFFILIATE_LINK"
+    link: "https://a.co/d/04gdGtrN"
   },
   {
-    name: "Sample Women's Dress",
-    category: "women",
+    name: "PRETTYGARDEN Womens 2026 Summer Casual",
+    category: "women wear",
     badge: "new", badgeText: "✨ New",
-    desc: "Elegant and stylish. Replace with your real product details.",
+    desc: "Crafted From The Soft Materials And with Attention to Every Detail",
     rating: "★★★★★", reviews: "4.9 (876 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-    img: "", emoji: "👗",
+    img: "https://m.media-amazon.com/images/I/718u-jSEcIL._AC_SY741_.jpg", emoji: "👗",
     imgBg: "linear-gradient(135deg,#1a1210,#201818)",
-    link: "YOUR_AMAZON_AFFILIATE_LINK"
+    link: "https://a.co/d/05PQ1WjB"
   },
   {
     name: "ALDO Women's Legoirii Tote Bag",
-    category: "accessories",
+    category: "women accessories",
     badge: "sale", badgeText: "💰 Sale",
-    desc: "Available at a lower price from other sellers that may not offer free Prime shipping.",
+    desc: "This spaciously stylish tote bag boasts ample storage space and shoulder strap for extra utility",
     rating: "★★★★☆", reviews: "4.8 (5340 reviews)",
     stock: "low-stock", stockLabel: "⚡ Only Few Left",
     img: "https://m.media-amazon.com/images/I/813VTGNZJ9L._AC_SX679_.jpg", emoji: "👜",
@@ -302,37 +304,37 @@ const products = [
     link: "https://amzn.to/403Jp2A"
   },
   {
-    name: "Sample Sneakers",
-    category: "footwear",
+    name: "Reebok Princess Sneakers",
+    category: "women footwear",
     badge: "limited", badgeText: "⏳ Limited",
-    desc: "Trending right now. Grab before it sells out.",
+    desc: "LIGHTWEIGHT & DURABLE ",
     rating: "★★★★★", reviews: "4.7 (2,100 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-    img: "", emoji: "👟",
+    img: "https://m.media-amazon.com/images/I/61JjEMAKhgL._AC_SY695_.jpg", emoji: "👟",
     imgBg: "linear-gradient(135deg,#0e1020,#14101e)",
-    link: "YOUR_AMAZON_AFFILIATE_LINK"
+    link: "https://a.co/d/03Onb157"
   },
   {
-    name: "Sample Watch",
-    category: "accessories",
+    name: "CIVO Analog Mens Watch",
+    category: "men accessories",
     badge: "new", badgeText: "✨ New",
-    desc: "Hand-picked by Wasif. Excellent quality at the best price.",
+    desc: "The stainless steel analog quartz watch features a elegant, minimalist design.",
     rating: "★★★★☆", reviews: "4.5 (320 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-    img: "", emoji: "⌚",
+    img: "https://m.media-amazon.com/images/I/71vySrMA-dL._AC_SY675_.jpg", emoji: "⌚",
     imgBg: "linear-gradient(135deg,#16120a,#1c1810)",
-    link: "YOUR_AMAZON_AFFILIATE_LINK"
+    link: "https://a.co/d/014I0QVp"
   },
   {
-    name: "Sample Women's Shoes",
-    category: "women",
+    name: "Veittes Women's Flat Slide Sandals",
+    category: "women footwear",
     badge: "hot", badgeText: "🔥 Hot",
-    desc: "Style meets comfort. Add your product info and affiliate link.",
+    desc: "These open toe flat slide sandals upper material are made of microfiber leather with snug lining.",
     rating: "★★★★★", reviews: "4.9 (1,540 reviews)",
     stock: "low-stock", stockLabel: "⚡ Almost Gone!",
-    img: "", emoji: "👠",
+    img: "https://m.media-amazon.com/images/I/918hbwcHDVL._AC_SY695_.jpg", emoji: "👠",
     imgBg: "linear-gradient(135deg,#1a0e12,#201018)",
-    link: "YOUR_AMAZON_AFFILIATE_LINK"
+    link: "https://a.co/d/0dVHF8Dk"
   }
   // ✅ NAYA PRODUCT:
   // ,{
