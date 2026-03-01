@@ -214,10 +214,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
   </div>
   <div class="filters reveal">
     <button class="fb active" onclick="filterP('all',this)">All</button>
-    <button class="fb" onclick="filterP('men',this)">Men</button>
-    <button class="fb" onclick="filterP('women',this)">Women</button>
-    <button class="fb" onclick="filterP('accessories',this)">Accessories</button>
-    <button class="fb" onclick="filterP('footwear',this)">Footwear</button>
+    <button class="fb" onclick="filterP('menwear',this)">Men</button>
+    <button class="fb" onclick="filterP('womenwear',this)">Women</button>
+    <button class="fb" onclick="filterP('menaccessories',this)">Accessories</button>
+    <button class="fb" onclick="filterP('womenfootwear',this)">Footwear</button>
+    <button class="fb" onclick="filterP('womenaccessories',this)">Accessories</button>
   </div>
   <div class="grid reveal" id="grid"></div>
 </div>
@@ -242,10 +243,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
   <div>
     <div class="fhead">Categories</div>
     <ul class="flinks">
-      <li><a href="#">men</a></li>
-      <li><a href="#">women</a></li>
-      <li><a href="#">accessories</a></li>
-      <li><a href="#">footwear</a></li>
+      <li><a href="#">menwear</a></li>
+      <li><a href="#">womenwear</a></li>
+      <li><a href="#">menaccessories</a></li>
+      <li><a href="#">womenfootwear</a></li>
+      <li><a href="#">womenaccessories</a></li>
     </ul>
   </div>
   <div>
@@ -270,7 +272,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
 const products = [
   {
     name: "Mens Fashion Button Down Shirts",
-     category: "men",
+     category: "menwear",
     badge: "hot", badgeText: "🔥 Hot",
     desc: "Constructed from a linen fabric this short sleeve shirt offers a lightweight and feel suitable for daily wear in warm",
     rating: "★★★★★", reviews: "4.8 (1,200 reviews)",
@@ -281,7 +283,7 @@ const products = [
   },
   {
     name: "PRETTYGARDEN Womens 2026 Summer Casual",
-    category: "women",
+    category: "womenwear",
     badge: "new", badgeText: "✨ New",
     desc: "Crafted From The Soft Materials And with Attention to Every Detail",
     rating: "★★★★★", reviews: "4.9 (876 reviews)",
@@ -292,7 +294,7 @@ const products = [
   },
   {
     name: "ALDO Women's Legoirii Tote Bag",
-    category: "accessories",
+    category: "womenaccessories",
     badge: "sale", badgeText: "💰 Sale",
     desc: "This spaciously stylish tote bag boasts ample storage space and shoulder strap for extra utility",
     rating: "★★★★☆", reviews: "4.8 (5340 reviews)",
@@ -303,7 +305,7 @@ const products = [
   },
   {
     name: "Reebok Princess Sneakers",
-    category: "footwear",
+    category: "womenfootwear",
     badge: "limited", badgeText: "⏳ Limited",
     desc: "LIGHTWEIGHT & DURABLE ",
     rating: "★★★★★", reviews: "4.7 (2,100 reviews)",
@@ -314,7 +316,7 @@ const products = [
   },
   {
     name: "CIVO Analog Mens Watch",
-    category: "accessories",
+    category: "menaccessories",
     badge: "new", badgeText: "✨ New",
     desc: "The stainless steel analog quartz watch features a elegant, minimalist design.",
     rating: "★★★★☆", reviews: "4.5 (320 reviews)",
@@ -325,7 +327,7 @@ const products = [
   },
   {
     name: "Veittes Women's Flat Slide Sandals",
-    category: "footwear",
+    category: "womenfootwear",
     badge: "hot", badgeText: "🔥 Hot",
     desc: "These open toe flat slide sandals upper material are made of microfiber leather with snug lining.",
     rating: "★★★★★", reviews: "4.9 (1,540 reviews)",
