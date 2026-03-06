@@ -267,6 +267,42 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
 //  ✅ PRODUCTS YAHAN ADD / EDIT KAREIN
 // ================================================================
 const products = [
+ {
+    name: "LOVEVOOK Purses for Women",
+    category: "womenbags",
+    badge: "sale", badgeText: "💰 Sale",
+    desc: "Our fashionable small purses for women is crafted from high-quality cross-grain PU leather.",
+    rating: "★★★★★", reviews: "4.8 (5340 reviews)",
+    stock: "in-stock", stockLabel: "✓ In Stock",
+bought: "685+ bought last month",
+    img: "https://m.media-amazon.com/images/I/71wEdyBpebL._AC_SY695_.jpg", 
+    imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
+    link: "https://amzn.to/4bokRId"
+  },
+ {
+    name: "LOVEVOOK Purses for Women",
+    category: "womenbags",
+    badge: "sale", badgeText: "💰 Sale",
+    desc: "Our fashionable small purses for women is crafted from high-quality cross-grain PU leather.",
+    rating: "★★★★★", reviews: "4.8 (5340 reviews)",
+    stock: "in-stock", stockLabel: "✓ In Stock",
+bought: "860+ bought last month",
+    img: "https://m.media-amazon.com/images/I/71FIQdd4JQL._AC_SY695_.jpg", 
+    imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
+    link: "https://amzn.to/4sofbU9"
+  },
+{
+    name: "LOVEVOOK Purses for Women",
+    category: "womenbags",
+    badge: "sale", badgeText: "💰 Sale",
+    desc: "Our fashionable small purses for women is crafted from high-quality cross-grain PU leather.",
+    rating: "★★★★★", reviews: "4.8 (5340 reviews)",
+    stock: "in-stock", stockLabel: "✓ In Stock",
+bought: "689+ bought last month",
+    img: "https://m.media-amazon.com/images/I/71KSHhB4aVL._AC_SY695_.jpg", 
+    imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
+    link: "https://amzn.to/4ldVdJC"
+  },
     {
     name: "Minimalist Leather Style Handbag for Women – Office & Casual Use",
     category: "womenbags",
@@ -274,7 +310,6 @@ const products = [
     desc: "A stylish and spacious medium tote bag designed for everyday use. Made from durable synthetic material with a comfortable shoulder strap to carry all your essentials with ease.",
     rating: "★★★★★", reviews: "4.8 (5340 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-time: "24 hours left",
 bought: "875+ bought last month",
     img: "https://m.media-amazon.com/images/I/813VTGNZJ9L._AC_SX679_.jpg", 
     imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
@@ -287,7 +322,6 @@ bought: "875+ bought last month",
     desc: "This elegant tote bag offers ample storage in a sleek, modern design. Perfect for work, shopping, or casual outings while keeping your daily essentials organized.",
     rating: "★★★★★", reviews: "4.9 (3225 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-time: "24 hours left",
 bought: "437+ bought last month",
     img: "https://m.media-amazon.com/images/I/71GCUWpZgOL._AC_SX679_.jpg", 
     imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
@@ -300,7 +334,6 @@ bought: "437+ bought last month",
     desc: "Chic, practical, and lightweight — this medium-sized handbag features a roomy main compartment and comfortable strap, making it ideal for daily wear.",
     rating: "★★★★★", reviews: "4.8 (1560 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-time: "24 hours left",
 bought: "573+ bought last month",
     img: "https://m.media-amazon.com/images/I/71wF3GTYRAL._AC_SX679_.jpg", 
     imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
@@ -313,7 +346,6 @@ bought: "573+ bought last month",
     desc: "Upgrade your everyday style with this versatile women’s handbag, designed to be worn as a tote, shoulder bag, or crossbody. Crafted from high-quality PU leather with elegant gold-tone hardware for a chic, polished look.",
     rating: "★★★★★", reviews: "4.9 (2479 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-time: "24 hours left",
 bought: "1435+ bought last month",
     img: "https://m.media-amazon.com/images/I/61O6TOf-8nL._AC_SX695_.jpg", 
     imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
@@ -326,7 +358,6 @@ bought: "1435+ bought last month",
     desc: "Stylish, spacious, and practical — this handbag features multiple pockets and a detachable strap for ultimate convenience. Perfect for work, shopping, or daily outings.",
     rating: "★★★★★", reviews: "4.9 (1206 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock", 
-time: "24 hours left",
 bought: "1240+ bought last month",
     img: "https://m.media-amazon.com/images/I/81x96nyRSjL._AC_SY695_.jpg", 
     imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
@@ -339,7 +370,6 @@ bought: "1240+ bought last month",
     desc: "This elegant purse combines fashion and function with durable PU leather, secure zip compartments, and a sleek structured design. A must-have accessory for modern women on the go.",
     rating: "★★★★★", reviews: "4.9 (6306 reviews)",
     stock: "in-stock", stockLabel: "✓ In Stock",
-time: "24 hours left",
 bought: "940+ bought last month",
     img: "https://m.media-amazon.com/images/I/81m6RtaGmaL._AC_SY695_.jpg", 
     imgBg: "linear-gradient(135deg,#101820,#0e1a18)",
@@ -358,7 +388,6 @@ bought: "940+ bought last month",
   //   stock: "in-stock",      // in-stock | low-stock | out-stock
   //   stockLabel: "✓ In Stock",
   //   img: "AMAZON_IMAGE_URL",
-  //     time: "6 hours left",
   //      bought: "143+ bought last month",
   //   imgBg: "linear-gradient(135deg,#12121e,#1a1228)",
   //   link: "AMAZON_AFFILIATE_LINK"
@@ -381,17 +410,11 @@ function renderProducts(list) {
         <div class="cdesc">${p.desc}</div>
         <div class="crating"><span class="cstars">${p.rating}</span><span class="crev">${p.reviews}</span></div>
         <div class="cfoot">
-         <div class="cstock ${p.stock}">${p.stockLabel}</div>
 <div style="font-size:.65rem;color:#f43f5e;font-weight:600;margin-bottom:6px;">
   ⏰ Limited Time:
   <span class="timer" data-id="${p.name}">Loading...</span>
 </div>
-  ⏰ Limited Time: ${p.time}
-</div>
-
-<div style="font-size:.65rem;color:var(--gold);margin-bottom:8px;">
-  🔥 ${p.bought}
-</div>
+         <div class="cstock ${p.stock}">${p.stockLabel}</div>
           <div class="bhint">For more details click here.👇🏻</div>
           <a href="${p.link}" target="_blank" rel="noopener" class="bbtn" onclick="trackClick('${p.name}')">
             🛒 Buy on Amazon <span class="barr">→</span>
