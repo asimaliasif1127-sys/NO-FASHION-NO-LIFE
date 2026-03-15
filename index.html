@@ -43,7 +43,7 @@ body::before{content:'';position:fixed;inset:0;z-index:1;opacity:0.02;background
 .particles{position:fixed;inset:0;z-index:0;pointer-events:none;}
 .pt{position:absolute;border-radius:50%;animation:ptrise linear infinite;opacity:0;}
 @keyframes ptrise{0%{opacity:0;transform:translateY(100vh)}8%{opacity:1}92%{opacity:1}100%{opacity:0;transform:translateY(-80px)}}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:#ffffff;);backdrop-filter:blur(none) saturate(150%);border-bottom:1px solid var(--border);}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:#ffffff;backdrop-filter:blur(none) saturate(150%);border-bottom:1px solid var(--border);}
 nav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.4),rgba(244,63,94,0.3),rgba(6,182,212,0.3),transparent);}
 .logo{font-family:'Unbounded',sans-serif;font-size:1.1rem;font-weight:900;letter-spacing:-.5px;color:var(--text);text-decoration:none;}
 .logo em{font-style:normal;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
@@ -157,6 +157,63 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:60
 .btop.show{opacity:1;transform:none;}
 .btop:hover{background:var(--gold);color:var(--bg);transform:translateY(-4px);}
 @media(max-width:768px){nav{padding:14px 20px;}.nav-links{display:none;}.sec{padding:36px 20px;}.deal-sec{padding:0 20px 40px;}.deal-banner{flex-direction:column;padding:32px 24px;text-align:center;}footer{grid-template-columns:1fr;gap:28px;padding:36px 20px;}.fbot{flex-direction:column;gap:8px;padding:16px 20px;text-align:center;}.fdisc{text-align:center;}.hero h1{letter-spacing:-2px;}}
+}
+/* =========================
+MOBILE RESPONSIVE FIX
+========================= */
+
+@media (max-width:768px){
+
+body{
+cursor:auto;
+}
+
+.cur,
+.cur-ring{
+display:none;
+}
+
+/* Hero section size fix */
+.hero{
+padding:120px 20px 40px;
+min-height:auto;
+}
+
+.hero h1{
+font-size:40px;
+line-height:1.1;
+}
+
+/* Stats responsive */
+.hero-stats{
+flex-direction:column;
+}
+
+/* Grid products mobile */
+.grid{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+/* Card image height */
+.cimg-wrap{
+height:200px;
+}
+
+/* Deal banner mobile */
+.deal-banner{
+flex-direction:column;
+text-align:center;
+padding:28px 20px;
+}
+
+.deal-icon{
+font-size:70px;
+}
+
+/* Section padding */
+.sec{
+padding:40px 20px;
 },
 </style>
 </head>
